@@ -24,7 +24,7 @@ void complex::setReal(double real) { _real = real; }
 void complex::setImag(double imag) { _imag = imag; }
 
 /* ----- I/O methods ----- */
-istream& POO22::operator << (istream& is,complex& c){
+istream& POO22::operator >> (istream& is,complex& c){
     cout << "Real: ";
     is >> c._real;
     cout << endl << "Imag: ";
