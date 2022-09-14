@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1663182433 source:/home/juan/Desktop/POO22/g3_e3/main.cpp
+	<cassert>
+	<string>
+	<iostream>
+

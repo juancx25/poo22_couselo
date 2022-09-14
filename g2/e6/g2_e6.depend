@@ -1,0 +1,59 @@
+# depslib dependency file v1.0
+1514140574 source:d:\poo22\g2_e6\main.cpp
+	<iostream>
+
+1662691028 source:d:\poo22\g2_e3\fecha.cpp
+	"fecha.h"
+
+1662727756 d:\poo22\g2_e3\fecha.h
+	<malloc.h>
+	<iostream>
+	<string.h>
+
+1662691028 source:h:\2c2022\poo22\g2_e3\fecha.cpp
+	"fecha.h"
+
+1662727756 h:\2c2022\poo22\g2_e3\fecha.h
+	<malloc.h>
+	<iostream>
+	<string.h>
+
+1662954070 source:h:\2c2022\poo22\g2_e6\main.cpp
+	"competencia.h"
+	<iostream>
+	<vector>
+	<conio.h>
+
+1662953998 h:\2c2022\poo22\g2_e6\ciclista.h
+	<vector>
+	<iostream>
+	"../g2_e3/fecha.h"
+	"../g2_e5/persona.h"
+
+1662918942 h:\2c2022\poo22\g2_e5\persona.h
+	<iostream>
+	<string>
+	"../g2_e3/fecha.h"
+
+1662954054 source:h:\2c2022\poo22\g2_e6\ciclista.cpp
+	"ciclista.h"
+	<iostream>
+	<vector>
+
+1662732454 source:h:\2c2022\poo22\g2_e5\persona\persona.cpp
+	"persona.h"
+
+1662732460 h:\2c2022\poo22\g2_e5\persona\persona.h
+	<iostream>
+	<string>
+	"../../g2_e3/fecha.h"
+
+1662954054 source:h:\2c2022\poo22\g2_e6\competencia.cpp
+	"competencia.h"
+	<iostream>
+	<vector>
+	<iomanip>
+
+1662954024 h:\2c2022\poo22\g2_e6\competencia.h
+	"ciclista.h"
+

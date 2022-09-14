@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1662502862 source:j:\poo22\g2_e4\main.cpp
+	"tiempo.cpp"
+
+1662503245 j:\poo22\g2_e4\tiempo.cpp
+	"tiempo.h"
+
+1662502953 j:\poo22\g2_e4\tiempo.h
+	<iostream>
+
+1662503245 source:j:\poo22\g2_e4\tiempo.cpp
+	"tiempo.h"
+
+1662503703 source:j:\poo22\g2_e4\g2_e4\main.cpp
+	"..\tiempo.h"
+

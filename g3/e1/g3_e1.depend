@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1663089403 source:/home/juan/Desktop/POO22/g3_e1/main.cpp
+	"complex.h"
+
+1663089333 source:/home/juan/Desktop/POO22/g3_e1/complex.cpp
+	"complex.h"
+	<math.h>
+
+1663030229 /home/juan/Desktop/POO22/g3_e1/complex.h
+	<iostream>
+

@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1662728748 source:d:\poo22\g2_e5\persona\main.cpp
+	"persona.h"
+
+1662730113 d:\poo22\g2_e5\persona\persona.h
+	<iostream>
+	<string>
+	"../../g2_e3/fecha.h"
+
+1662727756 d:\poo22\g2_e3\fecha.h
+	<malloc.h>
+	<iostream>
+	<string.h>
+
+1662728684 source:d:\poo22\g2_e5\persona\persona.cpp
+	"persona.h"
+
+1662691028 d:\poo22\g2_e3\fecha.cpp
+	"fecha.h"
+
+1662691028 source:d:\poo22\g2_e3\fecha.cpp
+	"fecha.h"
+

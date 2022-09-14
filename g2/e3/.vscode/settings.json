@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "ostream": "cpp",
+        "iostream": "cpp",
+        "*.tcc": "cpp",
+        "cmath": "cpp",
+        "cstdlib": "cpp",
+        "limits": "cpp",
+        "numbers": "cpp",
+        "iosfwd": "cpp",
+        "new": "cpp"
+    }
+}

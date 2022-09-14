@@ -1,0 +1,30 @@
+# depslib dependency file v1.0
+1662415050 source:c:\users\juan\desktop\poo22\g2_e3\g2_e3\main.cpp
+	"fecha.h"
+
+1662414926 c:\users\juan\desktop\poo22\g2_e3\g2_e3\fecha.h
+	<iostream>
+
+1662415039 source:c:\users\juan\desktop\poo22\g2_e3\g2_e3\fecha.cpp
+	"fecha.h"
+
+1662424688 source:j:\poo22\g2_e3\g2_e3\main.cpp
+	"fecha.h"
+
+1662470588 j:\poo22\g2_e3\g2_e3\fecha.h
+	<iostream>
+
+1662470600 source:j:\poo22\g2_e3\g2_e3\fecha.cpp
+	"fecha.h"
+	<string.h>
+
+1662587818 source:j:\poo22\g2_e3\fecha.cpp
+	"fecha.h"
+
+1662587931 j:\poo22\g2_e3\fecha.h
+	<iostream>
+	<string.h>
+
+1662587695 source:j:\poo22\g2_e3\main.cpp
+	"fecha.h"
+

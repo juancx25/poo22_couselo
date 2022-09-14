@@ -1,0 +1,37 @@
+#include "fecha.h"
+
+fecha::fecha(int day,int month, int year){
+    _day = day;
+    _month = month;
+    _year = year;
+}
+
+void fecha::setFecha(int day, int month, int year){
+    _day = day;
+    _month = month;
+    _year = year;
+    return;
+}
+
+void fecha::setDay(int day){
+    _day = day;
+}
+
+void fecha::setMonth(int month){
+    _month = month;
+}
+
+void fecha::setYear(int year){
+    _year = year;
+}
+
+void fecha::ingresarFecha(){
+    cin >> _day >> _month >> _year;
+}
+
+void imprimir(){
+
+}
+        void imprimir_letras();
+        char* mesLetras();
+        bool validarFecha();
