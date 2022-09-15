@@ -9,3 +9,13 @@
 1663187784 /home/juan/Desktop/POO22/poo22_couselo/g3/e5/racional.h
 	<iostream>
 
+1663198463 source:z:\poo22_couselo\g3\e5\main.cpp
+	<iostream>
+	"racional.h"
+
+1663199238 z:\poo22_couselo\g3\e5\racional.h
+	<iostream>
+
+1663199272 source:z:\poo22_couselo\g3\e5\racional.cpp
+	"racional.h"
+

@@ -9,15 +9,15 @@ int main()
     int d = 3;
     cout << "a: "; cin >> a;
     c = a + b;
-    //c += b;
+    c += b;
     cout << c << endl;
-    /*c = a + b; // equivale a: c = a.operator+(b)
+    c = a + b; // equivale a: c = a.operator+(b)
     cout << c << endl;
     c = b + a; // equivale a: c = b.operator+(a)
     cout << c << endl;
-    c = a + static_cast<CRacional>(d);
+    c = a + static_cast<racional>(d);
     cout << c << endl;
-    c = static_cast<CRacional>(d) + a;
+    c = static_cast<racional>(d) + a;
     cout << c << endl;
     double x = 2.0;
     c = x + a;
@@ -44,7 +44,7 @@ int main()
     c = a / b;
     cout << c << endl;
     x = c;
-    cout << x << endl;*/
+    cout << x << endl;
     //system("pause");
     return 0;
 }
