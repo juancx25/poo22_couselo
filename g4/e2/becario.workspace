@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="Workspace">
+		<Project filename="empleado/empleado.cbp" />
+		<Project filename="../../g2/e3/g2_e3.cbp" />
+		<Project filename="persona/persona.cbp" />
+		<Project filename="estudiante/estudiante.cbp" />
+		<Project filename="becario.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>

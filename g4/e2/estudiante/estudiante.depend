@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1663306037 source:z:\poo22_couselo\g4\e2\estudiante\estudiante.cpp
+	"estudiante.h"
+	<iostream>
+
+1663305379 source:z:\poo22_couselo\g4\e2\estudiante\main.cpp
+	<iostream>
+	"estudiante.h"
+
+1663305800 z:\poo22_couselo\g4\e2\estudiante\estudiante.h
+	"../persona/persona.h"
+	<iostream>
+
+1663302417 z:\poo22_couselo\g4\e2\persona\persona.h
+	<iostream>
+	<string>
+	"../../../g2/e3/fecha.h"
+
+1663190060 z:\poo22_couselo\g2\e3\fecha.h
+	<malloc.h>
+	<iostream>
+	<string.h>
+

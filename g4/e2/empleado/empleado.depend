@@ -55,3 +55,24 @@
 1663301270 source:/home/juan/Desktop/POO22/poo22_couselo/g4/e2/empleado/empleado.cpp
 	"empleado.h"
 
+1663302417 source:z:\poo22_couselo\g4\e2\empleado\empleado.cpp
+	"empleado.h"
+
+1663302417 z:\poo22_couselo\g4\e2\empleado\empleado.h
+	<iostream>
+	"../persona/persona.h"
+	"../../../g2/e3/fecha.h"
+
+1663302417 z:\poo22_couselo\g4\e2\persona\persona.h
+	<iostream>
+	<string>
+	"../../../g2/e3/fecha.h"
+
+1663190060 z:\poo22_couselo\g2\e3\fecha.h
+	<malloc.h>
+	<iostream>
+	<string.h>
+
+1663302417 source:z:\poo22_couselo\g4\e2\empleado\main.cpp
+	"empleado.h"
+
