@@ -2,6 +2,8 @@
 1662415050 source:c:\users\juan\desktop\poo22\g2_e3\g2_e3\main.cpp
 	"fecha.h"
 
+1662587931 
+
 1662414926 c:\users\juan\desktop\poo22\g2_e3\g2_e3\fecha.h
 	<iostream>
 
@@ -26,5 +28,16 @@
 	<string.h>
 
 1662587695 source:j:\poo22\g2_e3\main.cpp
+	"fecha.h"
+
+1662680228 source:/home/juan/Desktop/POO22/poo22_couselo/g2/e3/fecha.cpp
+	"fecha.h"
+
+1663299333 /home/juan/Desktop/POO22/poo22_couselo/g2/e3/fecha.h
+	<malloc.h>
+	<iostream>
+	<string.h>
+
+1662703380 source:/home/juan/Desktop/POO22/poo22_couselo/g2/e3/main.cpp
 	"fecha.h"
 

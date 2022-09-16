@@ -1,5 +1,5 @@
 #include "fecha.h"
-
+#include <iostream>
 
 using namespace POO22;
 using namespace std;

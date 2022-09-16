@@ -1,0 +1,57 @@
+# depslib dependency file v1.0
+1662732453 source:d:\poo22\g2_e5\persona\persona.cpp
+	"persona.h"
+
+1662732453 "
+
+1662732459 d:\poo22\g2_e5\persona\persona.h
+	<iostream>
+	<string>
+	"../../g2_e3/fecha.h"
+
+1662731358 e3/fecha.h"
+
+1662727756 d:\poo22\g2_e3\fecha.h
+	<malloc.h>
+	<iostream>
+	<string.h>
+
+1662691028 
+
+1662732504 source:d:\poo22\g2_e5\empleado\empleado.cpp
+	"empleado.h"
+
+1662730896 h"
+
+1662731358 d:\poo22\g2_e5\empleado\empleado.h
+	<iostream>
+	"../persona/persona.h"
+	"../../g2_e3/fecha.h"
+
+1662730896 source:d:\poo22\g2_e5\empleado\main.cpp
+	"empleado.h"
+
+1662691028 source:d:\poo22\g2_e3\fecha.cpp
+	"fecha.h"
+
+1663301256 source:/home/juan/Desktop/POO22/poo22_couselo/g4/e2/empleado/main.cpp
+	"empleado.h"
+
+1663301746 /home/juan/Desktop/POO22/poo22_couselo/g4/e2/empleado/empleado.h
+	<iostream>
+	"../persona/persona.h"
+	"../../../g2/e3/fecha.h"
+
+1663298310 /home/juan/Desktop/POO22/poo22_couselo/g4/e2/persona/persona.h
+	<iostream>
+	<string>
+	"../../../g2/e3/fecha.h"
+
+1663299333 /home/juan/Desktop/POO22/poo22_couselo/g2/e3/fecha.h
+	<malloc.h>
+	<iostream>
+	<string.h>
+
+1663301270 source:/home/juan/Desktop/POO22/poo22_couselo/g4/e2/empleado/empleado.cpp
+	"empleado.h"
+
