@@ -24,8 +24,7 @@ namespace POO22{
             estudiante(string& first_name,string& last_name,fecha& birth_date,
                        string& address,unsigned int dni,string& career,int subjects,fecha entry_date,float average);
 
-            estudiante(string& first_name,string& last_name,int b_day,int b_month,int b_year,
-                       string& address,unsigned int dni,string& career,int subjects,int e_day,int e_month,int e_year,float average);
+            estudiante(string& first_name,string& last_name,int b_day,int b_month,int b_year,string& address,unsigned int dni,string& career,int subjects,int e_day,int e_month,int e_year,float average);
 
             /* ----- Getters ----- */
             string getCareer();

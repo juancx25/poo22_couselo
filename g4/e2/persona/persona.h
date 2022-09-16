@@ -1,3 +1,6 @@
+#ifndef LIB_PERSONA
+#define LIB_PERSONA
+
 #include <iostream>
 #include <string>
 #include "../../../g2/e3/fecha.h"
@@ -147,3 +150,6 @@ namespace POO22 {
     };
     ostream& operator << (ostream& os, persona& p);
 }
+
+
+#endif

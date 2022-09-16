@@ -37,12 +37,12 @@
 1663301256 source:/home/juan/Desktop/POO22/poo22_couselo/g4/e2/empleado/main.cpp
 	"empleado.h"
 
-1663301746 /home/juan/Desktop/POO22/poo22_couselo/g4/e2/empleado/empleado.h
+1663336569 /home/juan/Desktop/POO22/poo22_couselo/g4/e2/empleado/empleado.h
 	<iostream>
 	"../persona/persona.h"
 	"../../../g2/e3/fecha.h"
 
-1663298310 /home/juan/Desktop/POO22/poo22_couselo/g4/e2/persona/persona.h
+1663335216 /home/juan/Desktop/POO22/poo22_couselo/g4/e2/persona/persona.h
 	<iostream>
 	<string>
 	"../../../g2/e3/fecha.h"
@@ -52,7 +52,7 @@
 	<iostream>
 	<string.h>
 
-1663301270 source:/home/juan/Desktop/POO22/poo22_couselo/g4/e2/empleado/empleado.cpp
+1663337937 source:/home/juan/Desktop/POO22/poo22_couselo/g4/e2/empleado/empleado.cpp
 	"empleado.h"
 
 1663302417 source:z:\poo22_couselo\g4\e2\empleado\empleado.cpp

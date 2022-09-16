@@ -21,3 +21,25 @@
 	<iostream>
 	<string.h>
 
+1663335967 source:/home/juan/Desktop/POO22/poo22_couselo/g4/e2/estudiante/estudiante.cpp
+	"estudiante.h"
+	<iostream>
+
+1663333139 /home/juan/Desktop/POO22/poo22_couselo/g4/e2/estudiante/estudiante.h
+	"../persona/persona.h"
+	<iostream>
+
+1663335216 /home/juan/Desktop/POO22/poo22_couselo/g4/e2/persona/persona.h
+	<iostream>
+	<string>
+	"../../../g2/e3/fecha.h"
+
+1663299333 /home/juan/Desktop/POO22/poo22_couselo/g2/e3/fecha.h
+	<malloc.h>
+	<iostream>
+	<string.h>
+
+1663332198 source:/home/juan/Desktop/POO22/poo22_couselo/g4/e2/estudiante/main.cpp
+	<iostream>
+	"estudiante.h"
+

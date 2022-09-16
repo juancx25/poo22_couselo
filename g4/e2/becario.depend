@@ -1,6 +1,31 @@
 # depslib dependency file v1.0
-1663296075 source:/home/juan/Desktop/POO22/poo22_couselo/g4/e2/becario.cpp
+1663340828 source:/home/juan/Desktop/POO22/poo22_couselo/g4/e2/becario.cpp
+	"becario.h"
 
-1663295154 source:/home/juan/Desktop/POO22/poo22_couselo/g4/e2/main.cpp
+1663339693 source:/home/juan/Desktop/POO22/poo22_couselo/g4/e2/main.cpp
+	"becario.h"
+
+1663339134 /home/juan/Desktop/POO22/poo22_couselo/g4/e2/becario.h
+	"estudiante/estudiante.h"
+	"empleado/empleado.h"
 	<iostream>
+
+1663333139 /home/juan/Desktop/POO22/poo22_couselo/g4/e2/estudiante/estudiante.h
+	"../persona/persona.h"
+	<iostream>
+
+1663335216 /home/juan/Desktop/POO22/poo22_couselo/g4/e2/persona/persona.h
+	<iostream>
+	<string>
+	"../../../g2/e3/fecha.h"
+
+1663299333 /home/juan/Desktop/POO22/poo22_couselo/g2/e3/fecha.h
+	<malloc.h>
+	<iostream>
+	<string.h>
+
+1663336569 /home/juan/Desktop/POO22/poo22_couselo/g4/e2/empleado/empleado.h
+	<iostream>
+	"../persona/persona.h"
+	"../../../g2/e3/fecha.h"
 

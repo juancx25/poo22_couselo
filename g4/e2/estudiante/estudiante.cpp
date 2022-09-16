@@ -8,9 +8,9 @@ estudiante::estudiante(){
 
 }
 
-estudiante::estudiante(string& first_name,string& last_name,fecha& birth_date,string& address,unsigned int dni,string& career,int subjects,fecha entry_date,float average){
-
-    persona(first_name,last_name,birth_date,address,dni);
+estudiante::estudiante(string& first_name,string& last_name,fecha& birth_date,string& address,unsigned int dni,string& career,int subjects,fecha entry_date,float average):
+            persona(first_name,last_name,birth_date,address,dni)
+{
     _career = career;
     _subjects = subjects;
     _entry_date = entry_date;
@@ -18,14 +18,9 @@ estudiante::estudiante(string& first_name,string& last_name,fecha& birth_date,st
 
 }
 
-estudiante::estudiante(string& first_name,string& last_name,int b_day,int b_month,int b_year,
-                       string& address,unsigned int dni,string& career,int subjects,int e_day,int e_month,int e_year,float average){
+estudiante::estudiante(string& first_name,string& last_name,int b_day,int b_month,int b_year,string& address,unsigned int dni,string& career,int subjects,int e_day,int e_month,int e_year,float average) :
+            persona(first_name,last_name,b_day,b_month,b_year,address,dni) {
 
-    _first_name = first_name;
-    _last_name = last_name;
-    _birth_date = fecha(b_day,b_month,b_year);
-    _address = address;
-    _dni = dni;
     _career = career;
     _subjects = subjects;
     _entry_date = fecha(e_day,e_month,e_year);
