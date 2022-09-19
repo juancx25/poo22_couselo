@@ -28,9 +28,9 @@ namespace POO22 {
             friend istream& operator >> (istream& is,complex& c);
             friend ostream& operator << (ostream& os,complex& c);
 
-            /* ----- Polar notations ----- */
+            /* ----- Polar notation -----
             double mod();
-            double angle();
+            double angle();*/
 
             /* ----- Operators ----- */
             complex operator + (const complex& b);

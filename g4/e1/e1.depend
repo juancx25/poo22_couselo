@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1663603413 source:/home/juan/Desktop/POO22/poo22_couselo/g4/e1/main.cpp
+	<iostream>
+	"polar.h"
+
+1663603431 source:/home/juan/Desktop/POO22/poo22_couselo/g4/e1/polar.cpp
+	"polar.h"
+	"math.h"
+
+1663603283 /home/juan/Desktop/POO22/poo22_couselo/g4/e1/polar.h
+	<iostream>
+	"complex.h"
+
+1663602314 /home/juan/Desktop/POO22/poo22_couselo/g4/e1/complex.h
+	<iostream>
+
+1663596791 source:/home/juan/Desktop/POO22/poo22_couselo/g4/e1/complex.cpp
+	"complex.h"
+	<math.h>
+
