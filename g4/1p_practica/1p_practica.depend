@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1663855316 source:/home/juan/Desktop/POO22/poo22_couselo/g4/1p_practica/main.cpp
+	"polinomio.h"
+
+1663856876 /home/juan/Desktop/POO22/poo22_couselo/g4/1p_practica/polinomio.h
+	<iostream>
+
+1663855097 source:/home/juan/Desktop/POO22/poo22_couselo/g4/1p_practica/polinomio.cpp
+	"polinomio.h"
+
