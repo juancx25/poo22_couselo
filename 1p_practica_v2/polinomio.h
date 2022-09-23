@@ -53,9 +53,12 @@ class polinomio : public monomio{
 
         friend ostream& operator << (ostream& os,polinomio& p);
 
+        void file_write_b(const char* fname);
         void file_write_t(const char* fname);
-        void file_read_t(const char* fname);
+        friend polinomio file_read_t(const char* fname);
+        friend polinomio file_read_b(const char* fname);
 
 };
-
+polinomio file_read_t(const char* fname);
+polinomio file_read_b(const char* fname);
 #endif // POLINOMIO_H_INCLUDED

@@ -53,9 +53,10 @@ polinomio::polinomio(int grado){
     _grado = grado;
     _elem = (monomio*)malloc(sizeof(monomio)*_grado);
     for (int i=0;i<_grado;i++){
-        monomio* m = new monomio();
+        monomio* m = new monomio(0,i);
         m->setExp(i);
         this->_elem[i] = *m;
+        //delete
     }
 }
 
@@ -104,30 +105,60 @@ ostream& operator << (ostream& os,polinomio& p){
     return os;
 }
 
-void polinomio::file_write_t(const char* fname){
+void polinomio::file_write_b(const char* fname){
     ofstream output;
-    output.open(fname);
-    output << getGrado() << '|' << *this << endl;
+    output.open(fname,ios::binary);
+    output.write(reinterpret_cast<char*>(&_grado),sizeof(int));
+    for (int i=0;i<_grado;i++){
+        monomio aux = getElem(i);
+        int pepe = sizeof(monomio);
+        output.write(reinterpret_cast<char*>(&aux),sizeof(double)+sizeof(int));
+    }
     output.close();
 }
 
-void polinomio::file_read_t(const char* fname){
+polinomio file_read_b(const char* fname){
+    ifstream input;
+    int grado;
+    input.open(fname);
+    input.read(reinterpret_cast<char*>(&grado),sizeof(int));
+    polinomio* result = new polinomio(grado);
+    for (int i=0;i<grado;i++){
+        //int coef,exp;
+        monomio* aux = new monomio();
+        input.read(reinterpret_cast<char*>(aux),sizeof(double)+sizeof(int));
+        result->_elem[aux->getExp()] += *aux;
+
+    }
+
+    return *result;
+}
+
+void polinomio::file_write_t(const char* fname){
+    ofstream output;
+    output.open(fname);
+    output << getGrado() << *this << 'a';
+    output.close();
+}
+
+polinomio file_read_t(const char* fname){
 
     ifstream input;
     input.open(fname);
+    char dummy;
     int grado;
-    char vbar;
     input >> grado;
-    input >> vbar;
-    setGrado(grado);
-    for (int i=0;i<grado;i++){
+    polinomio* result = new polinomio(grado);
+    while (dummy != 'a') {
         double coef=0;int exp=0;
-        char sign,dummy;
-        monomio* aux = new monomio();
-        input >> sign >> coef >> dummy >> exp;
+        monomio* aux = new monomio(0,5);
+        input >> coef >> dummy >> dummy >> exp;
         aux->setCoef(coef);
         aux->setExp(exp);
-        _elem[i] = *aux;
+        result->_elem[exp] += *aux;
+        delete aux;
+        input >> dummy;
+        input.seekg(-1,ios::cur);
     }
-    return;
+    return *result;
 }

@@ -15,9 +15,11 @@ int main()
     cout << p << endl << "p(2) = " << pepito << endl;
 
     p.file_write_t("out.txt");
+    polinomio p2 = file_read_t("out.txt");
+    cout << p2 << endl;
 
-    polinomio p2;
-    p2.file_read_t("out.txt");
-    cout << p2;
+    p.file_write_b("b_out.txt");
+    polinomio p3 = file_read_b("b_out.txt");
+    cout << p3;
     return 0;
 }
