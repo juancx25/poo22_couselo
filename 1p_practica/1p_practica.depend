@@ -8,3 +8,14 @@
 1663855097 source:/home/juan/Desktop/POO22/poo22_couselo/g4/1p_practica/polinomio.cpp
 	"polinomio.h"
 
+1663899141 source:z:\poo22_couselo\1p_practica\main.cpp
+	"polinomio.h"
+
+1663898603 z:\poo22_couselo\1p_practica\polinomio.h
+	<iostream>
+	<cstdlib>
+
+1663899221 source:z:\poo22_couselo\1p_practica\polinomio.cpp
+	"polinomio.h"
+	"cmath"
+

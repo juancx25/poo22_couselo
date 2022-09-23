@@ -2,21 +2,23 @@
 #define POLINOMIO_H_INCLUDED
 
 #include <iostream>
+#include <cstdlib>
+
 using namespace std;
 
 class monomio {
     protected:
-        float _coef;
+        double _coef;
         int _exp;
     public:
 
         monomio();
-        monomio(float coef,int exp);
+        monomio(double coef,int exp);
 
-        float getCoef();
+        double getCoef();
         int getExp();
 
-        void setCoef(float coef);
+        void setCoef(double coef);
         void setExp(int exp);
 
         friend ostream& operator << (ostream& os,monomio& m);
@@ -29,19 +31,22 @@ class polinomio : public monomio {
 
     private:
         monomio* _elem;
+        int _used;
         int _size;
     public:
 
         polinomio();
-        polinomio(monomio& m);
+        polinomio(int size);
 
-        monomio getElem();
+        monomio* getElem(int pos);
         int getSize();
 
-        void setElem(monomio elem);
+        void setElem(monomio elem,int pos);
         void setSize(int size);
+        void addElem(monomio elem) const;
 
         friend ostream& operator << (ostream& os,polinomio& p);
+        double operator () (double value);
 
 };
 
