@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstring>
 #include "vector.h"
 
 using namespace std;
@@ -20,7 +21,7 @@ vector::vector(const vector& v) :   _max{v._max},
     }
 }
 
-vector::vector(vector&& v) :    _max{v._max},
+/*vector::vector(vector&& v) :    _max{v._max},
                                 _elem{new v_elem[v._max]},
                                 _size{v._size}
 {
@@ -30,7 +31,7 @@ vector::vector(vector&& v) :    _max{v._max},
     v._elem = NULL;
     v._size = 0;
     v._max = 0;
-}
+}*/
 
 /* ----- Destructores ----- */
 vector::~vector(){
@@ -58,9 +59,7 @@ bool vector::resize(unsigned int max){
     bool result = false;
     if (max >= _size){
         v_elem* aux = new v_elem[max];
-        for (unsigned int i=0;i<_size;i++){ //Esto hace que el orden sea de n, no puedo copiar la memoria directamente?
-            aux[i] = _elem[i];
-        }
+        aux = (v_elem*)memcpy(aux,_elem,sizeof(v_elem)*_size);
         delete[] _elem;
         _elem = aux;
         _max = max;

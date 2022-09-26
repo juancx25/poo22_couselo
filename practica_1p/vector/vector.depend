@@ -34,3 +34,14 @@
 1664149015 z:\poo22_couselo\practica_1p\1p_2021\1\ctermino.h
 	<iostream>
 
+1664207537 source:/home/juan/Desktop/POO22/poo22_couselo/practica_1p/vector/vector.cpp
+	<iostream>
+	<cstring>
+	"vector.h"
+
+1664207190 /home/juan/Desktop/POO22/poo22_couselo/practica_1p/vector/vector.h
+	<iostream>
+
+1664207214 source:/home/juan/Desktop/POO22/poo22_couselo/practica_1p/vector/main.cpp
+	"vector.h"
+

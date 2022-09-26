@@ -18,7 +18,7 @@ class vector {
         /* ----- Constructores ----- */
         vector(unsigned int max);   //Con tamaño máximo
         vector(const vector& v);    //Copy
-        vector(vector&& v);         //Move
+        //vector(vector&& v);         //Move
 
         /* ----- Destructores ----- */
         ~vector();                  //Estándar
