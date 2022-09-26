@@ -16,6 +16,7 @@ class monomio {
         monomio();
         monomio(double coef,int exp);
 
+
         double getCoef() const;
         int getExp() const;
 

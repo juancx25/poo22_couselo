@@ -1,0 +1,36 @@
+# depslib dependency file v1.0
+1664056340 source:z:\poo22_couselo\vector\main.cpp
+	"vector.h"
+
+1664055639 z:\poo22_couselo\vector\vector.h
+	<iostream>
+
+1664056865 source:z:\poo22_couselo\vector\vector.cpp
+	<iostream>
+	"vector.h"
+
+1663949402 z:\poo22_couselo\1p_practica_v2
+
+1664050249 z:\poo22_couselo\1p_practica_v2\polinomio.h
+	<iostream>
+	<cstdlib>
+	<fstream>
+
+1664148973 source:z:\poo22_couselo\practica_1p\vector\main.cpp
+	"vector.h"
+
+1664148952 z:\poo22_couselo\practica_1p\vector\vector.h
+	<iostream>
+	"../1p_2021/1/CTermino.h"
+
+1664148947 source:z:\poo22_couselo\practica_1p\vector\vector.cpp
+	<iostream>
+	"vector.h"
+
+1664148751 z:\poo22_couselo\practica_1p\1p_2021\1\cpolinomio.h
+	<iostream>
+	"../../vector/vector.h"
+
+1664149015 z:\poo22_couselo\practica_1p\1p_2021\1\ctermino.h
+	<iostream>
+

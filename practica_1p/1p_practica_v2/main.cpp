@@ -18,8 +18,8 @@ int main()
     polinomio p2 = file_read_t("out.txt");
     cout << p2 << endl;
 
-    p.file_write_b("b_out.txt");
-    polinomio p3 = file_read_b("b_out.txt");
+    p.file_write_b("b_out.bin");
+    polinomio p3 = file_read_b("b_out.bin");
     cout << p3;
     return 0;
 }

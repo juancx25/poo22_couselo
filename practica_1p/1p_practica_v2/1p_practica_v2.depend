@@ -1,12 +1,12 @@
 # depslib dependency file v1.0
-1663905192 source:z:\poo22_couselo\1p_practica_v2\main.cpp
+1663949159 source:z:\poo22_couselo\1p_practica_v2\main.cpp
 	"polinomio.h"
 
-1663906090 source:z:\poo22_couselo\1p_practica_v2\polinomio.cpp
+1664050150 source:z:\poo22_couselo\1p_practica_v2\polinomio.cpp
 	"polinomio.h"
 	<cmath>
 
-1663905308 z:\poo22_couselo\1p_practica_v2\polinomio.h
+1664050249 z:\poo22_couselo\1p_practica_v2\polinomio.h
 	<iostream>
 	<cstdlib>
 	<fstream>

@@ -111,7 +111,6 @@ void polinomio::file_write_b(const char* fname){
     output.write(reinterpret_cast<char*>(&_grado),sizeof(int));
     for (int i=0;i<_grado;i++){
         monomio aux = getElem(i);
-        int pepe = sizeof(monomio);
         output.write(reinterpret_cast<char*>(&aux),sizeof(double)+sizeof(int));
     }
     output.close();
@@ -124,7 +123,6 @@ polinomio file_read_b(const char* fname){
     input.read(reinterpret_cast<char*>(&grado),sizeof(int));
     polinomio* result = new polinomio(grado);
     for (int i=0;i<grado;i++){
-        //int coef,exp;
         monomio* aux = new monomio();
         input.read(reinterpret_cast<char*>(aux),sizeof(double)+sizeof(int));
         result->_elem[aux->getExp()] += *aux;

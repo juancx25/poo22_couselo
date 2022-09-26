@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1664146409 source:z:\poo22_couselo\practica_1p\1p_2021\2\cradioreloj.cpp
+	"cRadioReloj.h"
+
+1664146409 source:z:\poo22_couselo\practica_1p\1p_2021\2\main.cpp
+	"cRadioReloj.h"
+
+1664146409 z:\poo22_couselo\practica_1p\1p_2021\2\cradioreloj.h
+	<iostream>
+	<cstring>
+
