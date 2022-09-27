@@ -1,7 +1,8 @@
 #ifndef VECTOR_H_INCLUDED
 #define VECTOR_H_INCLUDED
 #include <iostream>
-#define v_elem int
+#include "fecha.h"
+#define v_elem POO22::fecha
 
 using namespace std;
 
@@ -34,7 +35,7 @@ class vector {
 
         /* ----- Setters ----- */
 
-        /* Agrega un elemento en la posicion pos */
+        /* Agrega un elemento en la posicion pos. Si se va de rango, lo agrega al final. */
         void add(const v_elem& elem,unsigned int pos);
 
         /* Agrega un elemento al final. Aumenta el tamaño máximo si es necesario */
@@ -64,9 +65,14 @@ class vector {
         friend ostream& operator << (ostream& os,const vector& v);
         friend istream& operator >> (istream& os,const vector& v);
 
+        /* File I/O */
+        void readFile_B(const char* fname);
+        void writeFile_B(const char* fname);
 
 };
 ostream& operator << (ostream& os,const vector& v);
 istream& operator >> (istream& is,const vector& v);
+
+long long unsigned int fileSize(const char* fname);
 
 #endif // VECTOR_H_INCLUDED

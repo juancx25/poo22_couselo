@@ -16,15 +16,15 @@
 	<cstdlib>
 	<fstream>
 
-1664148973 source:z:\poo22_couselo\practica_1p\vector\main.cpp
+1664233771 source:z:\poo22_couselo\practica_1p\vector\main.cpp
 	"vector.h"
 
-1664148952 z:\poo22_couselo\practica_1p\vector\vector.h
+1664233430 z:\poo22_couselo\practica_1p\vector\vector.h
 	<iostream>
-	"../1p_2021/1/CTermino.h"
 
-1664148947 source:z:\poo22_couselo\practica_1p\vector\vector.cpp
+1664236077 source:z:\poo22_couselo\practica_1p\vector\vector.cpp
 	<iostream>
+	<cstring>
 	"vector.h"
 
 1664148751 z:\poo22_couselo\practica_1p\1p_2021\1\cpolinomio.h

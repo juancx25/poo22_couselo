@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cstring>
 #include "vector.h"
+#include <fstream>
 
 using namespace std;
 
@@ -46,6 +47,7 @@ unsigned int vector::getMax(){ return _max; }
 /* ----- Setters ----- */
 
 void vector::addEnd(const v_elem& elem){
+    vector pepe = *this;
     if (_max == 0) _max = 1;
     if (isFull()){
 
@@ -55,14 +57,16 @@ void vector::addEnd(const v_elem& elem){
 }
 
 void vector::add(const v_elem& elem,unsigned int pos){
+    vector pepe = *this;
     if (isFull()){
         resize(_max/2+1);
     }
     if (pos < _size){
-        for (unsigned int i=_size;i>pos;i++){
+        for (unsigned int i=_size;i>pos;i--){
             _elem[i] = _elem[i-1];
         }
         _elem[pos] = elem;
+        _size++;
     }
     else{
         addEnd(elem);
@@ -112,14 +116,53 @@ v_elem& vector::operator [] (unsigned int pos){
 /* ----- I/O ----- */
 ostream& operator << (ostream& os,const vector& v){
     for (unsigned int i=0;i<v._size;i++){
-        os << v._elem[i] << "  ";
+        os << v._elem[i] << ' ';
     }
     return os;
 }
 
-istream& operator >> (istream& is,const vector& v){
+/*istream& operator >> (istream& is,const vector& v){
     for (unsigned int i=0;i<v._size;i++){
         is >> v._elem[i];
     }
     return is;
+}*/
+
+/* File I/O */
+void vector::readFile_B(const char* fname){
+    ifstream in;
+    int size = fileSize(fname);
+    in.open(fname,ios::binary);
+    while(in.tellg()<size)
+    //while(!in.eof())
+    {
+        v_elem* aux = new v_elem();
+        in.read(reinterpret_cast<char*>(aux),sizeof(v_elem));
+        v_elem PEPE = *aux;
+        cout << PEPE << endl;
+        addEnd(*aux);
+    }
+    in.close();
+}
+
+void vector::writeFile_B(const char* fname){
+    ofstream out;
+    out.open(fname,ios::binary);
+    for (unsigned int i=0;i<_size;i++){
+        v_elem aux = _elem[i];
+        out.write(reinterpret_cast<char*>(&aux),sizeof(v_elem));
+    }
+    out.close();
+    return;
+}
+
+
+
+
+long long unsigned int fileSize(const char* fname){
+   ifstream file(fname,ios::binary);
+   file.seekg(0, ios::end);
+   long long unsigned int size = file.tellg();
+   file.close();
+   return size;
 }

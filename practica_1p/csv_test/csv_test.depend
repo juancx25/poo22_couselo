@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1664246538 source:z:\poo22_couselo\practica_1p\csv_test\main.cpp
+	<iostream>
+	"persona.h"
+	"vector.h"
+
+1664245880 z:\poo22_couselo\practica_1p\csv_test\persona.h
+	<iostream>
+	<string>
+	"../../g2/e3/fecha.h"
+
+1663190060 z:\poo22_couselo\g2\e3\fecha.h
+	<malloc.h>
+	<iostream>
+	<string.h>
+
+1664245895 z:\poo22_couselo\practica_1p\csv_test\vector.h
+	<iostream>
+	"persona.h"
+
+1664245877 source:z:\poo22_couselo\practica_1p\csv_test\persona.cpp
+	"persona.h"
+
+1664246806 source:z:\poo22_couselo\practica_1p\csv_test\vector.cpp
+	<iostream>
+	<cstring>
+	"vector.h"
+	<fstream>
+
