@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1664246538 source:z:\poo22_couselo\practica_1p\csv_test\main.cpp
+1664246824 source:z:\poo22_couselo\practica_1p\csv_test\main.cpp
 	<iostream>
 	"persona.h"
 	"vector.h"
@@ -21,9 +21,10 @@
 1664245877 source:z:\poo22_couselo\practica_1p\csv_test\persona.cpp
 	"persona.h"
 
-1664246806 source:z:\poo22_couselo\practica_1p\csv_test\vector.cpp
+1664289291 source:z:\poo22_couselo\practica_1p\csv_test\vector.cpp
 	<iostream>
 	<cstring>
 	"vector.h"
 	<fstream>
+	<sstream>
 

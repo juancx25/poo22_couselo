@@ -2,6 +2,7 @@
 #include <cstring>
 #include "vector.h"
 #include <fstream>
+#include <sstream>
 
 using namespace std;
 
@@ -47,19 +48,17 @@ unsigned int vector::getMax(){ return _max; }
 /* ----- Setters ----- */
 
 void vector::addEnd(const v_elem& elem){
-    vector pepe = *this;
     if (_max == 0) _max = 1;
     if (isFull()){
 
-        this->resize((_max/2)+1);   // Aumenta así pero podría ser de cualquier forma
+        this->resize(_max+(_max/2)+1);   // Aumenta así pero podría ser de cualquier forma
     }
     _elem[_size++] = elem;
 }
 
 void vector::add(const v_elem& elem,unsigned int pos){
-    vector pepe = *this;
     if (isFull()){
-        resize(_max/2+1);
+        resize(_max+(_max/2)+1);
     }
     if (pos < _size){
         for (unsigned int i=_size;i>pos;i--){
@@ -90,7 +89,8 @@ bool vector::resize(unsigned int max){
     bool result = false;
     if (max >= _size){
         v_elem* aux = new v_elem[max];
-        aux = (v_elem*)memcpy((void*)aux,(void*)_elem,sizeof(v_elem)*_size);
+        //aux = (v_elem*)memcpy((void*)aux,(void*)_elem,sizeof(v_elem)*_size);
+        for (unsigned int i=0;i<_size;i++) aux[i] = _elem[i];
         delete[] _elem;
         _elem = aux;
         result = true;
@@ -143,12 +143,36 @@ void vector::writeFile_T(const char* fname){
 void vector::readFile_T(const char* fname){
     ifstream in;
     in.open(fname);
-    string fn,ln,ad; unsigned int dni; int d,m,y;char NaN;
-    while(!in.eof()){
-        in >> fn >> NaN >> ln >> NaN >> d >> NaN >> m >> NaN >> y >> NaN >> ad >> NaN >> dni;
+    string fn,ln,ad; unsigned int dni; int d,m,y;
+    string line = "";
+    while(getline(in,line))
+    //while(in)
+    //while(!in.eof())
+    {
+        stringstream str_in(line);
+        string str_temp;
+        getline(str_in,str_temp,',');
+        fn = str_temp;
+
+        getline(str_in,str_temp,',');
+        ln = str_temp;
+
+        getline(str_in,str_temp,',');
+        d = stoi(str_temp);
+        getline(str_in,str_temp,',');
+        m = stoi(str_temp);
+        getline(str_in,str_temp,',');
+        y = stoi(str_temp);
+
+        getline(str_in,str_temp,',');
+        ad = str_temp;
+
+        getline(str_in,str_temp);
+        dni = stoi(str_temp);
+
+
         v_elem* aux = new v_elem(fn,ln,d,m,y,ad,dni);
         addEnd(*aux);
-        cout << *aux;
     }
     in.close();
 }

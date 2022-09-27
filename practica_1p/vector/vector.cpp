@@ -49,14 +49,14 @@ void vector::addEnd(const v_elem& elem){
     if (_max == 0) _max = 1;
     if (isFull()){
 
-        this->resize((_max/2)+1);   // Aumenta así pero podría ser de cualquier forma
+        this->resize(_max+(_max/2)+1);   // Aumenta así pero podría ser de cualquier forma
     }
     _elem[_size++] = elem;
 }
 
 void vector::add(const v_elem& elem,unsigned int pos){
     if (isFull()){
-        resize(_max/2+1);
+        resize(_max+(_max/2)+1);
     }
     if (pos < _size){
         for (unsigned int i=_size;i>pos;i++){
@@ -86,6 +86,7 @@ bool vector::resize(unsigned int max){
     bool result = false;
     if (max >= _size){
         v_elem* aux = new v_elem[max];
+        //for (unsigned int i=0;i<_size;i++) aux[i] = _elem[i];
         aux = (v_elem*)memcpy((void*)aux,(void*)_elem,sizeof(v_elem)*_size);
         delete[] _elem;
         _elem = aux;
