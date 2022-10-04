@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1664548317 source:/home/juan/Desktop/POO22/poo22_couselo/g5/test/figura.cpp
+	"figura.h"
+	<iostream>
+
+1664548424 /home/juan/Desktop/POO22/poo22_couselo/g5/test/figura.h
+
+1664548182 source:/home/juan/Desktop/POO22/poo22_couselo/g5/test/main.cpp
+	<iostream>
+	"figura.h"
+
