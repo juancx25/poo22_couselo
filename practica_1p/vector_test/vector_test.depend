@@ -1,0 +1,38 @@
+# depslib dependency file v1.0
+1664235482 source:z:\poo22_couselo\practica_1p\vector_test\persona.cpp
+	"persona.h"
+
+1664234236 z:\poo22_couselo\practica_1p\vector_test\persona.h
+	<iostream>
+	<string>
+	"../../g2/e3/fecha.h"
+
+1663190060 z:\poo22_couselo\g2\e3\fecha.h
+	<malloc.h>
+	<iostream>
+	<string.h>
+
+1664243671 source:z:\poo22_couselo\practica_1p\vector_test\main.cpp
+	<iostream>
+	"fecha.h"
+	"vector.h"
+
+1664245269 source:z:\poo22_couselo\practica_1p\vector_test\vector.cpp
+	<iostream>
+	<cstring>
+	"vector.h"
+	<fstream>
+
+1664244410 z:\poo22_couselo\practica_1p\vector_test\vector.h
+	<iostream>
+	"fecha.h"
+
+1663190060 z:\poo22_couselo\practica_1p\vector_test\fecha.h
+	<malloc.h>
+	<iostream>
+	<string.h>
+
+1663302417 source:z:\poo22_couselo\practica_1p\vector_test\fecha.cpp
+	"fecha.h"
+	<iostream>
+
