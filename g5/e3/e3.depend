@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1664945815 source:z:\poo22_couselo\g5\e3\main.cpp
+	"banco.h"
+
+1664946483 z:\poo22_couselo\g5\e3\banco.h
+	<vector>
+	"cuenta.h"
+
+1664946191 z:\poo22_couselo\g5\e3\cuenta.h
+	"cuenta.h"
+	<iostream>
+
+1664946223 source:z:\poo22_couselo\g5\e3\cuenta.cpp
+	"cuenta.h"
+

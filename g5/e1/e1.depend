@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1664907312 source:z:\poo22_couselo\g5\e1\vehiculo.cpp
+	"coche.h"
+
+1664907094 z:\poo22_couselo\g5\e1\vehiculo.h
+	<iostream>
+
+1664907343 source:z:\poo22_couselo\g5\e1\main.cpp
+	<iostream>
+	"coche.h"
+
+1664907203 z:\poo22_couselo\g5\e1\coche.h
+	"vehiculo.h"
+
