@@ -6,10 +6,17 @@
 class banco {
 
     private:
-        vector<cuenta> cuentas;
+        vector<cuenta*> cuentas;
 
     public:
+        //banco();
 
+        int getCantCuentas();
+        cuenta* getCuenta(int pos);
+        void addCuenta(cuenta* c);   //Agrega al final
+        void setCuenta(cuenta* c,int pos);
+
+        void imprimirClientes();
 
 };
 

@@ -32,6 +32,7 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="banco.cpp" />
 		<Unit filename="banco.h" />
 		<Unit filename="cuenta.cpp" />
 		<Unit filename="cuenta.h" />
