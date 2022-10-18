@@ -13,3 +13,20 @@
 1664946223 source:z:\poo22_couselo\g5\e3\cuenta.cpp
 	"cuenta.h"
 
+1665076851 source:/home/juan/Desktop/POO22/poo22_couselo/g5/e3/banco.cpp
+	"banco.h"
+
+1665076828 /home/juan/Desktop/POO22/poo22_couselo/g5/e3/banco.h
+	<vector>
+	"cuenta.h"
+
+1665076278 /home/juan/Desktop/POO22/poo22_couselo/g5/e3/cuenta.h
+	"cuenta.h"
+	<iostream>
+
+1665076667 source:/home/juan/Desktop/POO22/poo22_couselo/g5/e3/cuenta.cpp
+	"cuenta.h"
+
+1665077326 source:/home/juan/Desktop/POO22/poo22_couselo/g5/e3/main.cpp
+	"banco.h"
+

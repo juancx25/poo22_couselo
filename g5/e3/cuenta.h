@@ -17,16 +17,28 @@ class cuenta {
         double balance();
         void depositar(double valor);
 
+        void setTitular(string tit);
+        string getTitular();
+
+        virtual void imprimir();
+        friend ostream& operator << (ostream& os,cuenta& c);
+
 };
+ostream& operator << (ostream& os,cuenta& c);
 
 class cuenta_corriente : public cuenta{
 
     private:
+        double min_descubierto;
     public:
-        bool extraer(double valor) override;
+        cuenta_corriente(string tit,double min_desc);
 
+        virtual bool extraer(double valor);
+
+        virtual void imprimir();
+        friend ostream& operator << (ostream& os,cuenta_corriente& cc);
 };
-
+ostream& operator << (ostream& os,cuenta_corriente& cc);
 
 class caja_ahorro : public cuenta{
     private:
@@ -35,9 +47,11 @@ class caja_ahorro : public cuenta{
     public:
         caja_ahorro(string tit);
 
-        bool extraer(double valor) override;
+        virtual bool extraer(double valor);
 
+        virtual void imprimir();
+        friend ostream& operator << (ostream& os,caja_ahorro& ca);
 };
-
+ostream& operator << (ostream& os,caja_ahorro& ca);
 
 #endif // CUENTA_H_INCLUDED
