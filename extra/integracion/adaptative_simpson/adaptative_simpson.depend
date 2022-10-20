@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1666222472 source:z:\poo22_couselo\extra\integracion\adaptative_simpson\main.cpp
+	<iostream>
+	"../../templates/btree/btree.h"
+	<cmath>
+
+1666222262 z:\poo22_couselo\extra\templates\btree\btree.h
+	<cstddef>
+

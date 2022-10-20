@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1666215286 source:z:\poo22_couselo\extra\integracion\trapecios\main.cpp
+	<iostream>
+	<cmath>
+	"trapecios.h"
+
+1666215351 z:\poo22_couselo\extra\integracion\trapecios\trapecios.h
+
+1666215912 source:z:\poo22_couselo\extra\integracion\trapecios\trapecios.cpp
+	"trapecios.h"
+
