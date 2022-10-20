@@ -1,78 +1,71 @@
 #ifndef BTREE_H_INCLUDED
 #define BTREE_H_INCLUDED
 #include <cstddef>
+#include <iostream>
+#include "bt_node.h"
+using namespace std;
 
-template <class T=int> class bt_node{
+template <class T> class btree;
+template <class T> ostream& operator << (ostream&, btree<T>&);
 
-    protected:
-        T value;
-        bt_node* left;
-        bt_node* right;
+template <class T=int> class btree{
+    private:
+        bt_node<T>* root;
 
+        ostream& print_preorder(ostream& os, bt_node<T>* root);
     public:
         /* Constructores */
-        bt_node();
-        bt_node(T val);
-
-        /* Destructores */
-        //~bt_node();
+        btree();
+        btree(bt_node<T>* root);
+        btree(T val);
 
         /* Getters */
-        T getValue();
-        bt_node* getLeft();
-        bt_node* getRight();
+        bt_node<T>* getRoot();
+        //bt_node<T>* find(T val);
 
         /* Setters */
-        void setValue(T val);
-        void setLeft(bt_node* n);
-        void setRight(bt_node* n);
+        void setRoot(bt_node<T>* node);
+        void insert();
 
-        /*  */
-        bool isLeaf();
+        /* Traverse */
+
+
+        /* I/O */
+        friend ostream& operator<< <> (ostream & os, btree<T>& bt);
+
 };
 
 /* Constructores */
-template <class T> bt_node<T>::bt_node(){
+template <class T> btree<T>::btree(){
+    root = NULL;
 
-    T* aux = new T();
-    value = *aux;
-
-    left = NULL;
-    right = NULL;
 }
-
-template <class T> bt_node<T>::bt_node(T val){
-
-    value = val;
-
-    left = NULL;
-    right = NULL;
+template <class T> btree<T>::btree(bt_node<T>* node){
+    root = node;
+}
+template <class T> btree<T>::btree(T val){
+    root = new bt_node<T>(val);
 }
 
 /* Getters */
-
-template <class T> T bt_node<T>::getValue(){ return value; }
-
-template <class T> bt_node<T>* bt_node<T>::getLeft(){ return left; }
-
-template <class T> bt_node<T>* bt_node<T>::getRight(){ return right; }
-
+template <class T> bt_node<T>* btree<T>::getRoot(){ return root; }
 
 /* Setters */
+template <class T> void btree<T>::setRoot(bt_node<T>* node){ root = node; }
 
-template <class T> void bt_node<T>::setValue(T val){ value = val; }
+/* I/O */
+template <class T> ostream& btree<T>::print_preorder(ostream& os, bt_node<T>* root){
+    if (root){
+        os << root->getValue();
+        os << print_preorder(os,root->getLeft());
+        os << print_preorder(os,root->getRight());
+    }
+    return os;
+}
 
-template <class T> void bt_node<T>::setLeft(bt_node<T>* n){ left = n; }
-
-template <class T> void bt_node<T>::setRight(bt_node<T>* n){ right = n; }
-
-
-/*  */
-
-template <class T> bool bt_node<T>::isLeaf(){
-    bool result = false;
-    if ((!left) && (!right)) result = true;
-    return result;
+template <class T> ostream& operator << (ostream & os, btree<T>& bt){
+    os << bt.print_preorder(os,bt.getRoot());
+    return os;
 }
 
 #endif // BTREE_H_INCLUDED

@@ -14,3 +14,17 @@
 1666218444 z:\poo22_couselo\extra\templates\btree\btree.cpp
 	"btree.h"
 
+1666273726 source:/home/juan/Desktop/POO22/poo22_couselo/extra/templates/btree/btree.cpp
+	"btree.h"
+
+1666281610 /home/juan/Desktop/POO22/poo22_couselo/extra/templates/btree/btree.h
+	<cstddef>
+	<iostream>
+	"bt_node.h"
+
+1666275607 /home/juan/Desktop/POO22/poo22_couselo/extra/templates/btree/bt_node.h
+
+1666281209 source:/home/juan/Desktop/POO22/poo22_couselo/extra/templates/btree/main.cpp
+	<iostream>
+	"btree.h"
+
