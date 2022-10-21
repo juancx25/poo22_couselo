@@ -1,10 +1,12 @@
 # depslib dependency file v1.0
-1666218962 source:z:\poo22_couselo\extra\templates\btree\main.cpp
+1666352227 source:z:\poo22_couselo\extra\templates\btree\main.cpp
 	<iostream>
 	"btree.h"
 
-1666218902 z:\poo22_couselo\extra\templates\btree\btree.h
+1666352409 z:\poo22_couselo\extra\templates\btree\btree.h
 	<cstddef>
+	<iostream>
+	"bt_node.h"
 
 1666217549 z:\poo22_couselo\extra\templates\btree\btree.cxx
 
@@ -27,4 +29,7 @@
 1666281209 source:/home/juan/Desktop/POO22/poo22_couselo/extra/templates/btree/main.cpp
 	<iostream>
 	"btree.h"
+
+1666351727 z:\poo22_couselo\extra\templates\btree\bt_node.h
+	<iostream>
 

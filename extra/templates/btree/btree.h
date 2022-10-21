@@ -3,16 +3,17 @@
 #include <cstddef>
 #include <iostream>
 #include "bt_node.h"
-using namespace std;
 
 template <class T> class btree;
-template <class T> ostream& operator << (ostream&, btree<T>&);
+template <class T> std::ostream& operator << (std::ostream&, btree<T>&);
 
 template <class T=int> class btree{
     private:
         bt_node<T>* root;
 
-        ostream& print_preorder(ostream& os, bt_node<T>* root);
+        void print_preorder(bt_node<T>* root);
+        unsigned int __getCount(bt_node<T>* root);
+        void __insert(bt_node<T>** root,bt_node<T>* newNode);
     public:
         /* Constructores */
         btree();
@@ -22,16 +23,17 @@ template <class T=int> class btree{
         /* Getters */
         bt_node<T>* getRoot();
         //bt_node<T>* find(T val);
+        unsigned int getCount();
 
         /* Setters */
         void setRoot(bt_node<T>* node);
-        void insert();
+        void insert(bt_node<T>* newNode);
 
         /* Traverse */
 
 
         /* I/O */
-        friend ostream& operator<< <> (ostream & os, btree<T>& bt);
+        friend std::ostream& operator<< <> (std::ostream & os, btree<T>& bt);
 
 };
 
@@ -50,21 +52,65 @@ template <class T> btree<T>::btree(T val){
 /* Getters */
 template <class T> bt_node<T>* btree<T>::getRoot(){ return root; }
 
+
+//----------------------------------------------------------------------------
+
+template <class T> unsigned int btree<T>::__getCount(bt_node<T>* root){
+    unsigned int result = 0;
+    if (root){
+        result = 1 + __getCount(root->getLeft()) + __getCount(root->getRight());
+    }
+    return result;
+}
+
+template <class T> unsigned int btree<T>::getCount(){
+    return __getCount(root);
+}
+//----------------------------------------------------------------------------
+
+
 /* Setters */
 template <class T> void btree<T>::setRoot(bt_node<T>* node){ root = node; }
 
-/* I/O */
-template <class T> ostream& btree<T>::print_preorder(ostream& os, bt_node<T>* root){
-    if (root){
-        os << root->getValue();
-        os << print_preorder(os,root->getLeft());
-        os << print_preorder(os,root->getRight());
+//----------------------------------------------------------------------------
+
+template <class T> void btree<T>::__insert(bt_node<T>** root,bt_node<T>* newNode){
+
+    if (!root) return;
+    if (!(*root)){
+        *(root) = newNode;
     }
-    return os;
+    else{
+        if ()
+    }
 }
 
-template <class T> ostream& operator << (ostream & os, btree<T>& bt){
-    os << bt.print_preorder(os,bt.getRoot());
+template <class T> void btree<T>::insert(bt_node<T>* newNode){
+
+    if (!newNode) return;
+
+    __insert(&root,newNode);
+
+    return;
+
+}
+
+//----------------------------------------------------------------------------
+
+/* I/O */
+template <class T> void btree<T>::print_preorder(bt_node<T>* root){
+    if (root){
+        std::cout << (root->getValue());
+        std::cout << (root->getLeft());
+        std::cout << (root->getRight());
+    }
+    return;
+}
+
+template <class T> std::ostream& operator << (std::ostream & os, btree<T>& bt){
+
+    bt.print_preorder(bt.root);
+
     return os;
 }
 

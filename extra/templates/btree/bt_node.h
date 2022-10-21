@@ -1,5 +1,9 @@
 #ifndef BT_NODE_H_INCLUDED
 #define BT_NODE_H_INCLUDED
+#include <iostream>
+
+template <class T> class bt_node;
+template <class T> std::ostream& operator << (std::ostream & os, bt_node<T>& node);
 
 template <class T=int> class bt_node{
 
@@ -7,6 +11,8 @@ template <class T=int> class bt_node{
         T value;
         bt_node* left;
         bt_node* right;
+
+
 
     public:
         /* Constructores */
@@ -67,11 +73,19 @@ template <class T> void bt_node<T>::setLeft(bt_node<T>* n){ left = n; }
 template <class T> void bt_node<T>::setRight(bt_node<T>* n){ right = n; }
 
 
-
 template <class T> bool bt_node<T>::isLeaf(){
     bool result = false;
     if ((!left) && (!right)) result = true;
     return result;
+}
+
+
+/* I/O */
+template <class T> std::ostream& operator << (std::ostream & os, bt_node<T>* node){
+    if (node){
+        os << (node->getValue());
+    }
+    return os;
 }
 
 

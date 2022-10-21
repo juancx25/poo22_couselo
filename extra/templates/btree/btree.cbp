@@ -32,6 +32,7 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="bt_node.h" />
 		<Unit filename="btree.cpp" />
 		<Unit filename="btree.h" />
 		<Unit filename="main.cpp" />
