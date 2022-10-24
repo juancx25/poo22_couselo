@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1666363658 source:g:\2c2022\poo22\poo22_couselo-main\g6\templates\ej2\main.cpp
+	<iostream>
+	"vector.h"
+
+1666364014 g:\2c2022\poo22\poo22_couselo-main\g6\templates\ej2\vector.h
+	<iostream>
+	<iostream>
+	<cstring>
+	"vector.h"
+
