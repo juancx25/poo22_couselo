@@ -11,8 +11,8 @@ double leerDouble(){
     try
     {
         cin >> dato;                                        //Operacion de lectura
+
     }
-            // Por que usa el &?
     catch(ios_base::failure & e) //Captura una excepción
     {   //Si hubo excepcion:
         cout << e.what() << ": dato no valido" << endl;

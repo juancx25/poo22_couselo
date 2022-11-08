@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1666359486 source:g:\2c2022\poo22\poo22_couselo-main\g6\exc\e3\main.cpp
+	<iostream>
+	"excep.h"
+
+1666359406 g:\2c2022\poo22\poo22_couselo-main\g6\exc\e3\excep.h
+	<string>
+

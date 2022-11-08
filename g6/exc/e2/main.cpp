@@ -8,6 +8,7 @@ int main()
     try{
         cin >> ch;
         if (ch == '0') throw ch;
+        cout << "Valor ingresado: " << ch;
     }
     catch(char e){
         cout << "Excepcion: Se ingreso el caracter '0'" << endl;
