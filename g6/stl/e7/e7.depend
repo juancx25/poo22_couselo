@@ -1,0 +1,30 @@
+# depslib dependency file v1.0
+1667501422 source:z:\poo22_couselo\g6\stl\e7\main.cpp
+	<iostream>
+	"empleado.h"
+	"files.h"
+	<vector>
+	<conio.h>
+
+1667497546 z:\poo22_couselo\g6\stl\e7\empleado.h
+	<string>
+	<iostream>
+
+1667500503 source:z:\poo22_couselo\g6\stl\e7\files.cpp
+	"files.h"
+
+1667497552 source:z:\poo22_couselo\g6\stl\e7\empleado.cpp
+	"empleado.h"
+
+1667496845 z:\poo22_couselo\g6\stl\e7\files.cpp
+	"empleado.h"
+	<fstream>
+	<vector>
+	<sstream>
+
+1667500445 z:\poo22_couselo\g6\stl\e7\files.h
+	"empleado.h"
+	<fstream>
+	<vector>
+	<sstream>
+

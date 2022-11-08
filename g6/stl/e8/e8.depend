@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1667598989 source:z:\poo22_couselo\g6\stl\e8\main.cpp
+	<iostream>
+	"../e7/empleado.h"
+	<stack>
+
+1667497546 z:\poo22_couselo\g6\stl\e7\empleado.h
+	<string>
+	<iostream>
+
