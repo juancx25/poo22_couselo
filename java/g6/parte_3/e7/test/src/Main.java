@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class Main {
 
-    public final static void clearConsole()
+    public static void clearConsole()
     {
         try
         {
@@ -29,13 +29,13 @@ public class Main {
         } catch (IOException e){
             e.printStackTrace();
         }
-        JFrame M = new JFrame();
+        /*JFrame M = new JFrame();
         M.setContentPane(new menu().menuPanel);
         M.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         M.pack();
-        M.setVisible(true);
+        M.setVisible(true);*/
 
-        /*Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         while (menu != 5){
             clearConsole();
             System.out.println("-SISTEMA EMPLEADOS-");
@@ -57,7 +57,7 @@ public class Main {
 
                     break;
             }
-        }*/
+        }
         try{
             emp.exportar_empleados("empleados.txt");
         } catch (IOException e){
