@@ -75,14 +75,18 @@ public class employee {
     public void exportar_empleado_bin(String file_name) throws IOException {
         FileOutputStream fos = new FileOutputStream(file_name);
         DataOutputStream dos = new DataOutputStream(fos);
-        int aux;
-        aux = first_name.length();
-        dos.writeInt(aux);
+        dos.writeInt(first_name.length());
         fos.write(first_name.getBytes());
 
     }
     public void importar_empleado_bin(String file_name) throws IOException {
         FileInputStream fis = new FileInputStream(file_name);
+        DataInputStream dis = new DataInputStream(fis);
+        int aux = dis.readInt();
+        byte[] arr = new byte[aux];
+        dis.read(arr);
+        first_name = new String(arr);
+
 
     }
 }

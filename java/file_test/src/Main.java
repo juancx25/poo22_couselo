@@ -7,7 +7,7 @@ public class Main {
         employee jose = new employee();
         try{
             pepe.importar_empleado_txt("pepe.txt");
-
+            jose.importar_empleado_bin("pepe.bin");
             pepe.imprimir();
             //jose.exportar_empleado_bin("pepe.bin");
             pepe.exportar_empleado_txt("pepe.txt");

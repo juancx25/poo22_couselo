@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94c64910-1332-4c0d-aab4-cfaad4218f73" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/date.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../serializable_test/src/pepe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../g6/parte_3/e7/test/out/production/test/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../g6/parte_3/e7/test/out/production/test/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../g6/parte_3/e7/test/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../g6/parte_3/e7/test/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pepe.bin" beforeDir="false" afterPath="$PROJECT_DIR$/pepe.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/employee.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,16 +58,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/employee.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
