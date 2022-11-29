@@ -2,10 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94c64910-1332-4c0d-aab4-cfaad4218f73" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../extra/templates/btree/bin/Debug/btree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../extra/templates/btree/bt_node.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../extra/templates/btree/btree.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../extra/templates/btree/btree.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../extra/templates/btree/btree.depend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../extra/templates/btree/btree.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../extra/templates/btree/btree.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../extra/templates/btree/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../g1/e3/g1_ej3/g1_ej3.layout" beforeDir="false" afterPath="$PROJECT_DIR$/../../g1/e3/g1_ej3/g1_ej3.layout" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pepe.bin" beforeDir="false" afterPath="$PROJECT_DIR$/pepe.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src (copy 1)/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src (copy 1)/date.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../g6/parte_3/e7/test/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/../g6/parte_3/e7/test/.idea/.name" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

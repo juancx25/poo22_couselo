@@ -1,0 +1,30 @@
+# depslib dependency file v1.0
+1669582218 source:z:\poo22_couselo\practica_2p\sistema_alumnos\estudiante.cpp
+	"estudiante.h"
+	<iostream>
+
+1669579548 z:\poo22_couselo\practica_2p\sistema_alumnos\estudiante.h
+	"persona.h"
+	<iostream>
+	<fstream>
+
+1669578722 z:\poo22_couselo\practica_2p\sistema_alumnos\persona.h
+	<iostream>
+	<string>
+	"fecha.h"
+
+1669577034 z:\poo22_couselo\practica_2p\sistema_alumnos\fecha.h
+	<iostream>
+	<string.h>
+
+1669576722 source:z:\poo22_couselo\practica_2p\sistema_alumnos\persona.cpp
+	"persona.h"
+
+1669580071 source:z:\poo22_couselo\practica_2p\sistema_alumnos\main.cpp
+	<iostream>
+	"estudiante.h"
+
+1669577295 source:z:\poo22_couselo\practica_2p\sistema_alumnos\fecha.cpp
+	"fecha.h"
+	<iostream>
+

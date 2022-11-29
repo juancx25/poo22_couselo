@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1669694687 source:z:\poo22_couselo\practica_2p\2021\segundo\main.cpp
+	"ManejadorFiguras.h"
+
+1669694777 z:\poo22_couselo\practica_2p\2021\segundo\manejadorfiguras.h
+	<vector>
+	<algorithm>
+	<iostream>
+	<fstream>
+	<sstream>
+	"figura.h"
+
+1637588508 z:\poo22_couselo\practica_2p\2021\segundo\ccolor.h
+	<ostream>
+	<cstdint>
+
+1669694640 z:\poo22_couselo\practica_2p\2021\segundo\figura.h
+	"CColor.h"
+	<iomanip>
+	<cmath>
+
+1637692420 source:z:\poo22_couselo\practica_2p\2021\segundo\ccolor.cpp
+	"CColor.h"
+	<iostream>
+
+1669689297 source:z:\poo22_couselo\practica_2p\2021\segundo\files.cpp
+	"ManejadorFiguras.h"
+
+1669689297 z:\poo22_couselo\practica_2p\2021\segundo\files.cpp
+	"ManejadorFiguras.h"
+

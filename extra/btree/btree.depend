@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1669333401 source:z:\poo22_couselo\extra\btree\main.cpp
+	<iostream>
+	"btree.h"
+
+1669333783 z:\poo22_couselo\extra\btree\btree.h
+	<iostream>
+

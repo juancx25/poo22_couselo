@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1669396244 source:z:\poo22_couselo\extra\tateti\main.cpp
+	<iostream>
+	"tateti.h"
+
+1669415093 z:\poo22_couselo\extra\tateti\tateti.h
+	<cstring>
+	<conio.h>
+
