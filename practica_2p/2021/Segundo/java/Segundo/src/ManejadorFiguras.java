@@ -53,16 +53,16 @@ public class ManejadorFiguras {
 
             if (tipo_figura.equals("Rectangulo")){
                 altura = Double.parseDouble(aux[4]);
-                rectangulo r = new rectangulo((int)fore_color,(int)back_color,base,altura);
+                rectangulo r = new rectangulo(tipo_figura,(int)fore_color,(int)back_color,base,altura);
                 figuras.add(r);
             }
             if (tipo_figura.equals("Circulo")){
-                circulo c = new circulo((int)fore_color,(int)back_color,base,0);
+                circulo c = new circulo(tipo_figura,(int)fore_color,(int)back_color,base,0);
                 figuras.add(c);
             }
             if (tipo_figura.equals("Triangulo")){
                 altura = Double.parseDouble(aux[4]);
-                triangulo t = new triangulo((int)fore_color,(int)back_color,base,altura);
+                triangulo t = new triangulo(tipo_figura,(int)fore_color,(int)back_color,base,altura);
                 figuras.add(t);
             }
 
@@ -78,6 +78,63 @@ public class ManejadorFiguras {
         }
         out.close();
     }
+
+    public void recuperarFiguras_bin(String file_name) throws IOException {
+        FileInputStream fis = new FileInputStream(file_name);
+        DataInputStream dis = new DataInputStream(fis);
+        String tipo_figura;long fore_color;long back_color;double base;double altura;
+
+        //while(fis.available() > 0) {
+        while (true) {
+            try {
+                int aux = dis.readInt();
+                byte[] arr = new byte[aux];
+                dis.read(arr);
+                tipo_figura = new String(arr);
+
+                fore_color = dis.readInt();
+                back_color = dis.readInt();
+
+                base = dis.readDouble();
+                altura = dis.readDouble();
+
+                if (tipo_figura.equals("Rectangulo")){
+                    rectangulo r = new rectangulo(tipo_figura,(int)fore_color,(int)back_color,base,altura);
+                    figuras.add(r);
+                }
+                if (tipo_figura.equals("Circulo")){
+                    circulo c = new circulo(tipo_figura,(int)fore_color,(int)back_color,base,0);
+                    figuras.add(c);
+                }
+                if (tipo_figura.equals("Triangulo")){
+                    triangulo t = new triangulo(tipo_figura,(int)fore_color,(int)back_color,base,altura);
+                    figuras.add(t);
+                }
+
+            } catch (EOFException eof){
+                    break;
+            }
+        }
+        fis.close();
+    }
+
+    public void guardarFiguras_bin(String file_name) throws IOException {
+        FileOutputStream fos = new FileOutputStream(file_name);
+        DataOutputStream dos = new DataOutputStream(fos);
+        for (figura f : figuras){
+            dos.writeInt(f.tipo_figura.length());
+            fos.write(f.tipo_figura.getBytes());
+
+            dos.writeInt(f.getForeColor());
+            dos.writeInt(f.getBackColor());
+
+            dos.writeDouble(f.getBase());
+            dos.writeDouble(f.getAltura());
+
+        }
+        fos.close();
+    }
+
     public void print(){
         for (figura f : figuras){
             f.print();

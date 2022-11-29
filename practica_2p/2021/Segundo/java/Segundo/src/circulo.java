@@ -1,7 +1,7 @@
 public class circulo extends figura {
 
-    public circulo(int fore_color, int back_color, double base, double altura) {
-        super(fore_color, back_color, base, 0);
+    public circulo(String tipo_figura, int fore_color, int back_color, double base, double altura) {
+        super(tipo_figura, fore_color, back_color, base, 0);
     }
 
     public double area(){ return base*base*3.14; }

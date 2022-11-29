@@ -1,7 +1,7 @@
 public class rectangulo extends figura{
 
-    public rectangulo(int fore_color, int back_color, double base, double altura) {
-        super(fore_color, back_color, base, altura);
+    public rectangulo(String tipo_figura, int fore_color, int back_color, double base, double altura) {
+        super(tipo_figura, fore_color, back_color, base, altura);
     }
 
     public double area(){ return base*altura; }

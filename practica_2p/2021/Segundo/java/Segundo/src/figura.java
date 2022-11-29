@@ -1,16 +1,18 @@
 public abstract class figura implements FiguraMath{
+    protected String tipo_figura;
     protected color fore_color;
     protected color back_color;
     protected double base;
     protected double altura;
 
-    public figura(int fore_color, int back_color, double base, double altura){
+    public figura(String tipo_figura, int fore_color, int back_color, double base, double altura){
+        this.tipo_figura = tipo_figura;
         this.fore_color = new color(fore_color);
         this.back_color = new color(back_color);
         this.base = base;
         this.altura = altura;
     }
-
+    public String getTipo() { return tipo_figura; }
     public int getForeColor() { return fore_color.getColor(); }
     public int getBackColor() { return back_color.getColor(); }
     public double getBase(){ return this.base; }

@@ -1,7 +1,7 @@
 public class triangulo extends figura {
 
-    public triangulo(int fore_color, int back_color, double base, double altura) {
-        super(fore_color, back_color, base, altura);
+    public triangulo(String tipo_figura, int fore_color, int back_color, double base, double altura) {
+        super(tipo_figura, fore_color, back_color, base, altura);
     }
 
     public double area(){ return base*altura/2; }
